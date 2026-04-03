@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Gerazon</h2>
+            <ul>
+                <li><a href="index.html">Home</li></a>
+                <li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Message"></textarea>
+            <button onclick="window.open('https://wa.me/2349131872334', '_blank')">Send via WhatsApp</button>
+        </form>
+    </section>
+    <style>
+        .contact {
+            padding: 50px;
+            background: #eee;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+        }
+
+        button {
+            background: #000;
+            color: white;
+            padding: 10px;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 50px;
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: #eee;
+        }
+    </style>
+</body>
+
+</html>
